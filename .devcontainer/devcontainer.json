@@ -1,0 +1,25 @@
+{
+    "name": "R for VSCode",
+
+    "dockerComposeFile": [
+        "../docker-compose.yml"
+    ],
+
+    "service": "r",
+
+    "workspaceFolder": "/home/docker/workspace",
+
+    "postCreateCommand": "/bin/sh .devcontainer/install_packages_forVSCode.sh",
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-azuretools.vscode-docker",
+                "REditorSupport.r",
+                "mhutchie.git-graph",
+                "donjayamanne.githistory",
+                "eamodio.gitlens"
+            ]
+        }
+    }
+}
